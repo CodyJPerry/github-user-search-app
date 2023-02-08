@@ -1,9 +1,18 @@
 import React from 'react';
+// Import Components
+import Header from './components/header/Header.component';
+import Search from './components/search/Search.component';
+import ProfileCard from './components/profilecard/ProfileCard.component';
+
 import './App.css';
 
 function App() {
   return (
-    <h1>Hello World</h1>
+    <div class="container">
+      <Header />
+      <Search />
+      <ProfileCard />
+    </div>
   );
 }
 
