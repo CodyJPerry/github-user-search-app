@@ -8,6 +8,12 @@ import './App.css';
 
 function App() {
   const [user, setUser] = React.useState({});
+  const [searchInput, setSearchInput] = React.useState('');
+
+  function handleSearchInput(event) {
+    // Update the state
+    setSearchInput(event.target.value);
+  }
 
   React.useEffect(() => {
     /**
@@ -15,13 +21,19 @@ function App() {
      * Using the following API Endpoint: `https://api.github.com/users/:username`
      * REST API Docs: https://docs.github.com/en/rest/users?apiVersion=2022-11-28
      */
+
+    fetch(`https://api.github.com/users/octocat`)
+      .then(res => res.json())
+      .then(data => console.log(data))
+      .catch();
+
   }, [user]);
 
-  console.log(user)
+ // console.log(user)
   return (
     <div className="container">
       <Header />
-      <Search />
+      <Search value={searchInput} handleChange={handleSearchInput} />
       <ProfileCard />
     </div>
   );
