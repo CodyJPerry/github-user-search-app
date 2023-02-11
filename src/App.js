@@ -8,33 +8,31 @@ import './App.css';
 
 function App() {
   const [user, setUser] = React.useState({});
-  const [searchInput, setSearchInput] = React.useState('');
-
-  function handleSearchInput(event) {
-    // Update the state
-    setSearchInput(event.target.value);
-  }
+  const [searchTerm, setSearchTerm] = React.useState('');
 
   React.useEffect(() => {
-    /**
-     * We need to go get information from the github
-     * Using the following API Endpoint: `https://api.github.com/users/:username`
+     /**
+      * We need to go get information from the github
+      * Using the following API Endpoint: `https://api.github.com/users/:username`
      * REST API Docs: https://docs.github.com/en/rest/users?apiVersion=2022-11-28
      */
 
-    fetch(`https://api.github.com/users/octocat`)
-      .then(res => res.json())
-      .then(data => console.log(data))
-      .catch();
+     fetch(`https://api.github.com/users/octocat`)
+       .then(res => res.json())
+       .then(data => {
+         console.log(data);
+         // Add our user object
+        //setUser(data);
+       })
+       .catch();
 
-  }, [user]);
+  }, []);
 
- // console.log(user)
   return (
     <div className="container">
       <Header />
-      <Search value={searchInput} handleChange={handleSearchInput} />
-      <ProfileCard />
+      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      <ProfileCard user={user} />
     </div>
   );
 }

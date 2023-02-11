@@ -1,9 +1,9 @@
-const Search = ({ value, handleChange }) => {
+const Search = ({ searchTerm, setSearchTerm }) => {
     return (
         <input 
-            value={value}
-            onChange={(event) => handleChange(event)}
-            type="search"
+            value={searchTerm}
+            onChange={event => setSearchTerm(event.target.value)}
+            type="text"
         />
         );
 }
