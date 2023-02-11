@@ -7,7 +7,7 @@ import ProfileCard from './components/profilecard/ProfileCard.component';
 import './App.css';
 
 function App() {
-  const [user, setUser] = React.useState({});
+  const [user, setUser] = React.useState('');
   const [searchTerm, setSearchTerm] = React.useState('');
 
   React.useEffect(() => {
@@ -22,7 +22,7 @@ function App() {
        .then(data => {
          console.log(data);
          // Add our user object
-        //setUser(data);
+        setUser(data);
        })
        .catch();
 
@@ -30,8 +30,8 @@ function App() {
 
   return (
     <div className="container">
-      <Header />
-      <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
+      {/* <Header /> */}
+      {/* <Search searchTerm={searchTerm} setSearchTerm={setSearchTerm} /> */}
       <ProfileCard user={user} />
     </div>
   );
