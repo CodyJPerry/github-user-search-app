@@ -8,7 +8,12 @@ const Search = ({ searchInput, updateUsername }) => {
 
   return (
     <form onSubmit={onSubmit}>
-      <input type="text" name="searchTerm" ref={searchInput} />
+      <input
+        placeholder="Search Github username..."
+        type="text"
+        name="searchTerm"
+        ref={searchInput}
+      />
       <input type="submit" value="Submit" />
     </form>
   );

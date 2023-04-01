@@ -3,7 +3,7 @@ import Header from "./components/header/Header.component";
 import Search from "./components/search/Search.component";
 import ProfileCard from "./components/profilecard/ProfileCard.component";
 
-import "./App.css";
+import "./App.scss";
 
 function App() {
   const [userData, setUserData] = React.useState("");
