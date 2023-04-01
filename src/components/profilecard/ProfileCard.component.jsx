@@ -9,15 +9,19 @@ const ProfileCard = ({user}) => {
             location, 
             blog,
             twitter_username,
-            company
+            company,
+            avatar_url,
+            url
         } = user;
 
     return (
         <div className="profile-card">
-            <div className="avatar-wrapper"></div>
+            <div className="avatar-wrapper">
+                <img src={avatar_url} alt="Profile Avatar"/>
+            </div>
             <div className="profile-wrapper">
                 <h2>{name}</h2>
-                <p>{`@${login}`}</p>
+                <a href={url}>{`@${login}`}</a>
                 <p>{bio}</p>
                 <div className="profile-highlights">
                     <div className="highlight">
@@ -36,19 +40,15 @@ const ProfileCard = ({user}) => {
                 <div className="location-social-info">
                     <div className="location">
                         <p>{location}</p>
-                        <span>{public_repos}</span>
                     </div>
                     <div className="twitter-social">
                         <p>{twitter_username}</p>
-                        <span>{followers}</span>
                     </div>
                     <div className="profile-link">
-                        <p>{blog}</p>
-                        <span>{following}</span>
+                        <a href={blog}>{blog}</a>
                     </div>
                     <div className="company">
                         <p>{company}</p>
-                        <span>{following}</span>
                     </div>
                 </div>
             </div>
