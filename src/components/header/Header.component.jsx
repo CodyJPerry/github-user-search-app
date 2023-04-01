@@ -2,8 +2,8 @@ import Toggle from "../toggle/Toggle";
 
 const Header = () => {
   return (
-    <header>
-      <h1>devfinder</h1>
+    <header className="header-wrapper">
+      <h1 className="title">devfinder</h1>
       <Toggle />
     </header>
   );
