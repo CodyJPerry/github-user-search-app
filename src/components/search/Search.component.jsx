@@ -1,9 +1,9 @@
-const Search = ({ searchInput }) => {
+const Search = ({ searchInput, updateUsername }) => {
   // We want an uncontrolled component to let the DOM handle our state instead of the component
 
   function onSubmit(e) {
     e.preventDefault();
-    console.log(searchInput);
+    updateUsername(searchInput.current.value.toLowerCase());
   }
 
   return (

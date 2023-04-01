@@ -6,32 +6,37 @@ import ProfileCard from "./components/profilecard/ProfileCard.component";
 import "./App.css";
 
 function App() {
-  const [user, setUser] = React.useState("");
+  const [userData, setUserData] = React.useState("");
+  const [isLoading, setIsLoading] = React.useState(false);
+  const [hasError, setHasError] = React.useState(false);
   const [username, setUsername] = React.useState("octocat");
   const searchInput = React.useRef();
 
-  const [searchTerm, setSearchTerm] = React.useState("");
-
   React.useEffect(() => {
-    fetch(`https://api.github.com/users/${username}`)
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        // Add our user object
-        setUser(data);
-      })
-      .catch();
+    const fetchInfo = async () => {
+      setIsLoading(true);
+      setHasError(false);
+      try {
+        const res = await fetch(`https://api.github.com/users/${username}`);
+        const json = await res.json();
+        setUserData(json);
+      } catch (error) {
+        console.log(
+          "Error in API request, please ensure the url is valid. =>",
+          error
+        );
+        setHasError(true);
+      }
+      setIsLoading(false);
+    };
+    fetchInfo();
   }, [username]);
 
   return (
     <div className="container">
-      {/* <Header /> */}
-      <Search
-        searchTerm={searchTerm}
-        setSearchTerm={setSearchTerm}
-        searchInput={searchInput}
-      />
-      <ProfileCard user={user} />
+      <Header />
+      <Search updateUsername={setUsername} searchInput={searchInput} />
+      <ProfileCard user={userData} />
     </div>
   );
 }
