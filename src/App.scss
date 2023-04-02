@@ -29,5 +29,6 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  max-width: 730px;
+  margin: 0 auto;
 }
