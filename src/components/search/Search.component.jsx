@@ -17,7 +17,7 @@ const Search = ({ searchInput, updateUsername }) => {
         name="searchTerm"
         ref={searchInput}
       />
-      <input className="form-control-action" type="submit" value="Submit" />
+      <input className="form-control-action" type="submit" value="Search" />
     </form>
   );
 };
