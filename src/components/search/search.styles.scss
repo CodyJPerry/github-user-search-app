@@ -1,9 +1,16 @@
 .form-control {
     display: flex;
     background: rgb(30, 42, 71);
+    justify-content: space-between;
     border-radius: 15px;
+    margin-bottom: 1.8em;
 
-    // .form-control-input {
-    //     height: 69px;
-    // }
+    .form-control-input {
+        padding: 1em;
+        background: rgb(30, 42, 71);
+        border: none;
+        height: 59px;
+        border-radius: 15px;
+        width: 100%;
+    }
 }

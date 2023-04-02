@@ -1,4 +1,5 @@
 import SunIcon from "../../assets/icon-sun.svg";
+import "./toggle.styles.scss";
 
 const Toggle = () => (
   <div className="toggle-wrapper">
