@@ -6,6 +6,7 @@
     justify-content: space-between;
     border-radius: 15px;
     margin-bottom: 1.8em;
+    font-family: inherit;
 
     .form-control-input {
         padding: 1em;
@@ -14,6 +15,15 @@
         border: none;
         border-radius: 15px;
         width: 100%;
+        color: #ffffff;
+        font-family: inherit;
+        font-size: 1rem;
+    }
+
+    .form-control-input::placeholder {
+        color: #ffffff;
+        font-size: 1rem;
+        font-weight: 400;
     }
 
     .form-control-action {
