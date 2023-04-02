@@ -18,6 +18,9 @@
         color: #ffffff;
         font-family: inherit;
         font-size: 1rem;
+        background: url('../../assets/icon-search.svg') no-repeat 24px/24px;
+        text-indent: 3.3em;
+        text-overflow: ellipsis;
     }
 
     .form-control-input::placeholder {
