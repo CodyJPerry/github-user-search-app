@@ -23,6 +23,28 @@
     .bio {
         margin: 2em 0 1.8em 0;
     }
+
+    .highlights {
+        display: flex;
+        justify-content: space-between;
+        background: rgb(20, 29, 47);
+        border-radius: 10px;
+        padding: 1.2em 2em;
+    }
+
+    .highlight {
+        text-align: center;
+
+        p {
+            font-size: 0.688rem;
+            margin-bottom: 0.5em
+        }
+
+        span {
+            font-size: 1rem;
+            font-weight: 700;
+        }
+    }
 }
 
 .avatar-wrapper {

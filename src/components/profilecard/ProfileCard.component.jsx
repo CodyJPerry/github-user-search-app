@@ -51,7 +51,7 @@ const ProfileCard = ({ user }) => {
         </p>
       </div>
       <div className="body">
-        <div className="profile-highlights">
+        <div className="highlights">
           <div className="highlight">
             <p>Repos</p>
             <span>{public_repos}</span>
