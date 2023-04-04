@@ -17,6 +17,17 @@ const ProfileCard = ({ user }) => {
     url,
   } = user;
 
+  /**
+   * @param {*} createdDate
+   * @returns String
+   */
+  const getCreatedAtDate = (createdDate) => {
+    const date = new Date(createdDate);
+    const dateArr = date.toString().split(" ");
+
+    return `${dateArr[2]} ${dateArr[1]} ${dateArr[3]}`;
+  };
+
   return (
     <div className="profile-card">
       <div className="header">
@@ -27,12 +38,17 @@ const ProfileCard = ({ user }) => {
             alt="Profile Avatar"
           />
         </div>
-        <h2>{name}</h2>
-        <a href={url}>{`@${login}`}</a>
-        <p>{created_at}</p>
+        <div className="details">
+          <h2>{name}</h2>
+          <a href={url}>{`@${login}`}</a>
+          <p>{`Joined ${getCreatedAtDate(created_at)}`}</p>
+        </div>
       </div>
       <div className="bio">
-        <p>{bio}</p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+          Quisque volutpat mattis eros.
+        </p>
       </div>
       <div className="body">
         <div className="profile-highlights">

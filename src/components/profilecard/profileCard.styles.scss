@@ -2,6 +2,27 @@
     background: rgb(30, 42, 71);
     border-radius: 15px;
     padding: 2em 1.5em;
+
+    // Header
+    .header {
+        display: flex;
+        align-items: center;
+    }
+
+    .details {
+        margin-left: 1.5em;
+    }
+
+    .details > a {
+        color: rgb(0, 121, 255);
+        display: inline-block;
+        margin-bottom: 0.6em;
+    }
+
+    // Bio Section
+    .bio {
+        margin: 2em 0 1.8em 0;
+    }
 }
 
 .avatar-wrapper {
