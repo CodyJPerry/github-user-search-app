@@ -1,4 +1,8 @@
 import "./profileCard.styles.scss";
+import LocationIcon from "../../assets/icon-location.svg";
+import WebsiteIcon from "../../assets/icon-website.svg";
+import TwitterIcon from "../../assets/icon-twitter.svg";
+import CompanyIcon from "../../assets/icon-company.svg";
 
 const ProfileCard = ({ user }) => {
   const {
@@ -8,11 +12,11 @@ const ProfileCard = ({ user }) => {
     created_at,
     public_repos,
     followers,
-    following,
     location,
     blog,
-    twitter_username,
     company,
+    twitter_username,
+    following,
     avatar_url,
     url,
   } = user;
@@ -67,15 +71,20 @@ const ProfileCard = ({ user }) => {
         </div>
         <div className="location-social-info">
           <div className="location">
+            <img src={LocationIcon} alt="Map marker icon to signal location" />
             <p>{location}</p>
           </div>
-          <div className="twitter-social">
-            <p>{twitter_username}</p>
-          </div>
           <div className="profile-link">
+            <img src={WebsiteIcon} alt="Map marker icon to signal location" />
             <a href={blog}>{blog}</a>
           </div>
+          <div className="twitter-social">
+            {/* <p>{twitter_username}</p> */}
+            <img src={TwitterIcon} alt="Map marker icon to signal location" />
+            <p>Not Available</p>
+          </div>
           <div className="company">
+            <img src={CompanyIcon} alt="Map marker icon to signal location" />
             <p>{company}</p>
           </div>
         </div>
