@@ -2,11 +2,13 @@
     background: rgb(30, 42, 71);
     border-radius: 15px;
     padding: 2em 1.5em;
+    position: relative;
 
     // Header
     .header {
         display: flex;
         align-items: center;
+        margin-left: 4.5em;
     }
 
     .details {
@@ -30,7 +32,7 @@
         background: rgb(20, 29, 47);
         border-radius: 10px;
         padding: 1.2em 2em;
-        margin-bottom: 1.5em;
+        margin-bottom: 1.9em;
     }
 
     .highlight {
@@ -70,23 +72,22 @@
 }
 
 .avatar-wrapper {
+    position: absolute;
+
     .profile-image {
         width: 70px;
         height: 70px;
-        border-radius: 50%;
-        
+        border-radius: 50%; 
     }
 }
 
 // Media Queries
 @media screen and (min-width: 600px) {
     .location-social-info {
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    .location-social-info > div {
-        flex: 1 1 50%;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0 40px;
     }
 
     .profile-link {
@@ -100,14 +101,42 @@
     .company {
         order: 3
     }
+
+    .avatar-wrapper .profile-image {
+        width: 117px;
+        height: 117px;
+        border-radius: 50%;
+    }
+
+    .profile-card {
+        .header {
+            display: flex;
+            align-items: center;
+            margin-left: 8.5em;
+            margin-top: 1em;
+        }
+
+        .bio {
+            margin: 3em 0 1.7em 0;
+        }
+    }
 }
 
 @media screen and (min-width: 769px) {
     .profile-card {
         background: rgb(30, 42, 71);
         border-radius: 15px;
-        padding: 2.5em 3em;
+        padding: 2.5em 3em 2em 3em;
         display: flex;
+
+        .header {
+            margin-left: unset;
+            margin-top: unset;
+        }
+
+        .bio {
+            margin: 1.2em 0 1.7em 0;
+        }
 
         .details {
             margin-left: unset;
@@ -119,24 +148,11 @@
 
         .avatar-wrapper {
             margin-right: 2.5em;
-        }
-
-        .avatar-wrapper .profile-image {
-            width: 117px;
-            height: 117px;
-            border-radius: 50%;
+            position: unset;
         }
 
         .location-social-info > div {
-            flex: 1;
             font-size: 0.85rem;
-        }
-
-        .location-social-info {
-            display: grid;
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0 40px;
         }
     }
 }
