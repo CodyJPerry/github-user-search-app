@@ -18,6 +18,10 @@ function App() {
       setHasError(false);
       try {
         const res = await fetch(`https://api.github.com/users/${username}`);
+        // We want to check if the request was valid or not before continuing
+        if(res.status === 404) {
+          throw new Error();
+        }
         const json = await res.json();
         setUserData(json);
       } catch (error) {
@@ -31,6 +35,8 @@ function App() {
     };
     fetchInfo();
   }, [username]);
+
+  console.log(hasError);
 
   return (
     <div className="container">
