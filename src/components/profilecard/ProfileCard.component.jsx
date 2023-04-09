@@ -43,13 +43,6 @@ const ProfileCard = ({ user }) => {
         </div>
       <div className="content">
       <div className="header">
-        {/* <div className="avatar-wrapper">
-          <img
-            className="profile-image"
-            src={avatar_url}
-            alt="Profile Avatar"
-          />
-        </div> */}
         <div className="details">
           <div className="title-wrapper">
           <h2>{name}</h2>
@@ -61,10 +54,7 @@ const ProfileCard = ({ user }) => {
         </div>
       </div>
       <div className="bio">
-        <p>
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-          Quisque volutpat mattis eros.
-        </p>
+        <p>{bio}</p>
       </div>
       <div className="body">
         <div className="highlights">
@@ -84,20 +74,19 @@ const ProfileCard = ({ user }) => {
         <div className="location-social-info">
           <div className="location">
             <img src={LocationIcon} alt="Map marker icon to signal location" />
-            <p>{location}</p>
+            <p>{location ? location : 'Not Available'}</p>
           </div>
           <div className="profile-link">
             <img src={WebsiteIcon} alt="Map marker icon to signal location" />
-            <a href={blog}>{blog}</a>
+            {blog ? <a href={blog}>${blog}</a> : 'Not Available'}
           </div>
           <div className="twitter-social">
-            {/* <p>{twitter_username}</p> */}
             <img src={TwitterIcon} alt="Map marker icon to signal location" />
-            <p>Not Available</p>
+            <p>{twitter_username ? `@${twitter_username}` : 'Not Available'}</p>
           </div>
           <div className="company">
             <img src={CompanyIcon} alt="Map marker icon to signal location" />
-            <p>{company}</p>
+            <p>{company ? company : 'Not Available'}</p>
           </div>
         </div>
       </div>
