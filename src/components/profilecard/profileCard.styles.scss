@@ -77,3 +77,66 @@
         
     }
 }
+
+// Media Queries
+@media screen and (min-width: 600px) {
+    .location-social-info {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .location-social-info > div {
+        flex: 1 1 50%;
+    }
+
+    .profile-link {
+        order: 2;
+    }
+
+    .twitter-social {
+        order: 1;
+    }
+
+    .company {
+        order: 3
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .profile-card {
+        background: rgb(30, 42, 71);
+        border-radius: 15px;
+        padding: 2.5em 3em;
+        display: flex;
+
+        .details {
+            margin-left: unset;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: baseline;
+        }
+
+        .avatar-wrapper {
+            margin-right: 2.5em;
+        }
+
+        .avatar-wrapper .profile-image {
+            width: 117px;
+            height: 117px;
+            border-radius: 50%;
+        }
+
+        .location-social-info > div {
+            flex: 1;
+            font-size: 0.85rem;
+        }
+
+        .location-social-info {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
+            gap: 0 40px;
+        }
+    }
+}
