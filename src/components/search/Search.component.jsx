@@ -1,6 +1,6 @@
 import "./search.styles.scss";
 
-const Search = ({ searchInput, updateUsername }) => {
+const Search = ({ searchInput, updateUsername, hasError }) => {
   // We want an uncontrolled component to let the DOM handle our state instead of the component
 
   function onSubmit(e) {
@@ -17,6 +17,8 @@ const Search = ({ searchInput, updateUsername }) => {
         name="searchTerm"
         ref={searchInput}
       />
+      {/* We need to give the user some feedback when a error occurs */}
+      {hasError ? <span>No results</span> : null}
       <input className="form-control-action" type="submit" value="Search" />
     </form>
   );

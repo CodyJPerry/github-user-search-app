@@ -26,8 +26,7 @@ function App() {
         setUserData(json);
       } catch (error) {
         console.log(
-          "Error in API request, please ensure the url is valid. =>",
-          error
+          "Error in API request, please ensure the url is valid.",
         );
         setHasError(true);
       }
@@ -36,12 +35,13 @@ function App() {
     fetchInfo();
   }, [username]);
 
-  console.log(hasError);
-
   return (
     <div className="container">
       <Header />
-      <Search updateUsername={setUsername} searchInput={searchInput} />
+      <Search 
+        updateUsername={setUsername} 
+        searchInput={searchInput}
+        hasError={hasError} />
       <ProfileCard user={userData} />
     </div>
   );
