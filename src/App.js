@@ -19,7 +19,7 @@ function App() {
       try {
         const res = await fetch(`https://api.github.com/users/${username}`);
         // We want to check if the request was valid or not before continuing
-        if(res.status === 404) {
+        if(res.status !== 200) {
           throw new Error();
         }
         const json = await res.json();

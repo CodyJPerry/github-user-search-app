@@ -9,6 +9,9 @@ const Search = ({ searchInput, updateUsername, hasError }) => {
   }
 
   return (
+    <div className="form-wrapper">
+    {/* We need to give the user some feedback when a error occurs */}
+      {hasError ? <span className="error small">No results</span> : null}
     <form className="form-control" onSubmit={onSubmit} autoComplete="off">
       <input
         className="form-control-input"
@@ -18,9 +21,10 @@ const Search = ({ searchInput, updateUsername, hasError }) => {
         ref={searchInput}
       />
       {/* We need to give the user some feedback when a error occurs */}
-      {hasError ? <span>No results</span> : null}
+      {hasError ? <span className="error full">No results</span> : null}
       <input className="form-control-action" type="submit" value="Search" />
     </form>
+    </div>
   );
 };
 

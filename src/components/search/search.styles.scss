@@ -1,3 +1,24 @@
+.form-wrapper {
+    position: relative;
+
+    .error {
+        width: 225px;
+        font-weight: 700;
+        color: rgb(247, 70, 70);
+        margin-right: 1.5em;
+        font-size: 1rem;
+    }
+
+    .error.small {
+        position: absolute;
+        top: -38px;
+    }
+
+    .error.full {
+        display: none;
+    }
+}
+
 .form-control {
     display: flex;
     padding: 0.6em 0.5em;
@@ -42,11 +63,17 @@
         font-family: inherit;
         letter-spacing: 0.5px;
     }
+}
 
-    span {
-        width: 175px;
-        font-weight: 700;
-        color: rgb(247, 70, 70);
-        margin-right: 1.5em;
+// Media Queries
+@media screen and (min-width: 500px) {
+    .form-wrapper {
+        .error.small {
+            display: none;
+        }
+    
+        .error.full {
+            display: block;
+        }
     }
 }

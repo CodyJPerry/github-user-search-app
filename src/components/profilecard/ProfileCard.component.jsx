@@ -78,7 +78,7 @@ const ProfileCard = ({ user }) => {
           </div>
           <div className="profile-link">
             <img src={WebsiteIcon} alt="Map marker icon to signal location" />
-            {blog ? <a href={blog}>${blog}</a> : 'Not Available'}
+            {blog ? <a href={blog}>{blog}</a> : 'Not Available'}
           </div>
           <div className="twitter-social">
             <img src={TwitterIcon} alt="Map marker icon to signal location" />
