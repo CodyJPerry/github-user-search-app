@@ -9,7 +9,7 @@ const Search = ({ searchInput, updateUsername, hasError }) => {
   }
 
   return (
-    <form className="form-control" onSubmit={onSubmit}>
+    <form className="form-control" onSubmit={onSubmit} autoComplete="off">
       <input
         className="form-control-input"
         placeholder="Search Github username..."

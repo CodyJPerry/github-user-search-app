@@ -54,7 +54,7 @@ const ProfileCard = ({ user }) => {
         </div>
       </div>
       <div className="bio">
-        <p>{bio}</p>
+        <p>{bio} {bio ? bio : `This profile has no bio.`}</p>
       </div>
       <div className="body">
         <div className="highlights">
