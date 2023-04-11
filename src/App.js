@@ -13,6 +13,10 @@ function App() {
   const [username, setUsername] = React.useState("octocat");
   const searchInput = React.useRef();
 
+  const handleToggle = () => {
+    setIsDarkMode(darkMode => !darkMode);
+  }
+
   React.useEffect(() => {
     const fetchInfo = async () => {
       setIsLoading(true);
@@ -36,9 +40,11 @@ function App() {
     fetchInfo();
   }, [username]);
 
+  console.log('Dark mode =>', isDarkMode);
+
   return (
     <div className="container">
-      <Header />
+      <Header isDarkMode={isDarkMode} setDarkMode={handleToggle} />
       <Search 
         updateUsername={setUsername} 
         searchInput={searchInput}

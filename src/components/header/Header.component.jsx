@@ -1,11 +1,11 @@
 import Toggle from "../toggle/Toggle";
 import "./header.styles.scss";
 
-const Header = () => {
+const Header = ({ isDarkMode, setDarkMode }) => {
   return (
     <header className="header-wrapper">
       <h1 className="title">devfinder</h1>
-      <Toggle />
+      <Toggle isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
     </header>
   );
 };
