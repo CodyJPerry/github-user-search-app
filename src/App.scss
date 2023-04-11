@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
 body {
   background: rgb(20, 29, 47);
   color: #FFFFFF;
@@ -37,13 +42,7 @@ body {
     flex-direction: column;
     max-width: 730px;
     margin: 0 auto;
-    padding: 0 1.5em;
-    height: 100vh;
+    padding: 2em 1.5em;
+    min-height: 100vh;
     justify-content: center;
 }
-
-// @media screen and (orientation: landscape) {
-//   .container {
-//     margin: 2em;
-//   }
-// }
