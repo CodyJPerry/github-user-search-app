@@ -7,6 +7,7 @@ import "./App.scss";
 
 function App() {
   const [userData, setUserData] = React.useState("");
+  const [isDarkMode, setIsDarkMode] = React.useState(true);
   const [isLoading, setIsLoading] = React.useState(false);
   const [hasError, setHasError] = React.useState(false);
   const [username, setUsername] = React.useState("octocat");

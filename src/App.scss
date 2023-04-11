@@ -47,11 +47,18 @@ body {
     justify-content: center;
 
     .unavailable {
-     color: rgba(246, 248, 255, 0.4);
+      color: rgba(246, 248, 255, 0.4);
     }
 
     .unavailable-img {
-   //   color: rgba(246, 248, 255, 0.4);
       filter: grayscale(25%);
-     }
+    }
+}
+
+@media (prefers-color-scheme: light) {
+  // Light theme styles go here
+}
+
+@media (prefers-color-scheme: dark) {
+  // Dark theme styles go here
 }
