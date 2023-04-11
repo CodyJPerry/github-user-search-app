@@ -38,12 +38,12 @@ body {
     max-width: 730px;
     margin: 0 auto;
     padding: 0 1.5em;
-    height: 90vh;
+    height: 100vh;
     justify-content: center;
 }
 
-@media screen and (orientation: landscape) {
-  .container {
-    margin: 2em;
-  }
-}
+// @media screen and (orientation: landscape) {
+//   .container {
+//     margin: 2em;
+//   }
+// }
