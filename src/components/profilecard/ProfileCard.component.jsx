@@ -35,21 +35,21 @@ const ProfileCard = ({ user }) => {
   return (
     <div className="profile-card">
             <div className="avatar-wrapper">
-          <img
+          {avatar_url ? <img
             className="profile-image"
             src={avatar_url}
             alt="Profile Avatar"
-          />
+          />: null}
         </div>
       <div className="content">
       <div className="header">
         <div className="details">
           <div className="title-wrapper">
-          <h2>{name}</h2>
-          <a href={url}>{`@${login}`}</a>
+          <h2>{name ? name : 'Not found'}</h2>
+          <a href={url ? url : ''}>{url ? `@${login}` : null}</a>
           </div>
           <div className="created-at">
-          <p>{`Joined ${getCreatedAtDate(created_at)}`}</p>
+          <p>{created_at ? `Joined ${getCreatedAtDate(created_at)}` : null}</p>
           </div>
         </div>
       </div>
@@ -60,15 +60,15 @@ const ProfileCard = ({ user }) => {
         <div className="highlights">
           <div className="highlight">
             <p>Repos</p>
-            <span>{public_repos}</span>
+            <span>{public_repos ? public_repos : '0'}</span>
           </div>
           <div className="highlight">
             <p>Followers</p>
-            <span>{followers}</span>
+            <span>{followers ? followers : '0'}</span>
           </div>
           <div className="highlight">
             <p>Following</p>
-            <span>{following}</span>
+            <span>{following ? following : '0'}</span>
           </div>
         </div>
         <div className="location-social-info">

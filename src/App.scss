@@ -33,11 +33,17 @@ body {
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  max-width: 730px;
-  margin: 0 auto;
-  padding: 0 1.5em;
-  height: 100vh;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 730px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+    height: 90vh;
+    justify-content: center;
+}
+
+@media screen and (orientation: landscape) {
+  .container {
+    margin: 2em;
+  }
 }
