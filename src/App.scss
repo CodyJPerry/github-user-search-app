@@ -13,7 +13,7 @@ body {
   background: rgb(20, 29, 47);
   color: #FFFFFF;
   font-family: 'Space Mono', monospace;
-  font-size: 16px;
+  font-size: 15px;
   line-height: 25px;
 
   h1 {
@@ -45,4 +45,13 @@ body {
     padding: 2em 1.5em;
     min-height: 100vh;
     justify-content: center;
+
+    .unavailable {
+     color: rgba(246, 248, 255, 0.4);
+    }
+
+    .unavailable-img {
+   //   color: rgba(246, 248, 255, 0.4);
+      filter: grayscale(25%);
+     }
 }

@@ -63,6 +63,11 @@
         font-family: inherit;
         letter-spacing: 0.5px;
     }
+
+    .form-control-action:hover,
+    .form-control-action:focus {
+        background: rgb(96, 171, 255);
+    }
 }
 
 // Media Queries

@@ -54,7 +54,7 @@ const ProfileCard = ({ user }) => {
         </div>
       </div>
       <div className="bio">
-        <p>{bio} {bio ? bio : `This profile has no bio.`}</p>
+        <p className={bio ? null : 'unavailable'}>{bio} {bio ? bio : `This profile has no bio.`}</p>
       </div>
       <div className="body">
         <div className="highlights">
@@ -73,20 +73,34 @@ const ProfileCard = ({ user }) => {
         </div>
         <div className="location-social-info">
           <div className="location">
-            <img src={LocationIcon} alt="Map marker icon to signal location" />
-            <p>{location ? location : 'Not Available'}</p>
+            <img 
+              className={location ? null : 'unavailable-img'}  
+              src={LocationIcon} alt="Map marker icon to signal location" 
+            />
+            <p className={location ? null : 'unavailable'}>{location ? location : 'Not Available'}</p>
           </div>
           <div className="profile-link">
-            <img src={WebsiteIcon} alt="Map marker icon to signal location" />
+            <img 
+              className={blog ? null : 'unavailable-img'} 
+              src={WebsiteIcon} alt="Map marker icon to signal location" 
+            />
+            <p className={blog ? null : 'unavailable'}>
             {blog ? <a href={blog}>{blog}</a> : 'Not Available'}
+            </p>
           </div>
           <div className="twitter-social">
-            <img src={TwitterIcon} alt="Map marker icon to signal location" />
-            <p>{twitter_username ? `@${twitter_username}` : 'Not Available'}</p>
+            <img 
+              className={twitter_username ? null : 'unavailable-img'} 
+              src={TwitterIcon} alt="Map marker icon to signal location" 
+            />
+            <p className={twitter_username ? null : 'unavailable'}>{twitter_username ? `@${twitter_username}` : 'Not Available'}</p>
           </div>
           <div className="company">
-            <img src={CompanyIcon} alt="Map marker icon to signal location" />
-            <p>{company ? company : 'Not Available'}</p>
+            <img 
+              className={company ? null : 'unavailable-img'} 
+              src={CompanyIcon} alt="Map marker icon to signal location" 
+            />
+            <p className={company ? null : 'unavailable'}>{company ? company : 'Not Available'}</p>
           </div>
         </div>
       </div>
