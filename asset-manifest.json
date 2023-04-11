@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/github-user-search-app/static/css/main.984eaaf0.css",
+    "main.css": "/github-user-search-app/static/css/main.0699178c.css",
     "main.js": "/github-user-search-app/static/js/main.03536695.js",
     "static/media/icon-sun.svg": "/github-user-search-app/static/media/icon-sun.f28a8996f9959c40bdff14d5a43c08d8.svg",
     "static/media/icon-website.svg": "/github-user-search-app/static/media/icon-website.b7923f6c1dae9717c079c60d8a5c82e5.svg",
@@ -9,11 +9,11 @@
     "static/media/icon-twitter.svg": "/github-user-search-app/static/media/icon-twitter.f6a2a695fbb260b28a9fd67dd4179ea5.svg",
     "static/media/icon-search.svg": "/github-user-search-app/static/media/icon-search.0cc0c98424cc75d5e1df.svg",
     "static/media/icon-location.svg": "/github-user-search-app/static/media/icon-location.514367a8a3164bc60d952099fa6e6fb7.svg",
-    "main.984eaaf0.css.map": "/github-user-search-app/static/css/main.984eaaf0.css.map",
+    "main.0699178c.css.map": "/github-user-search-app/static/css/main.0699178c.css.map",
     "main.03536695.js.map": "/github-user-search-app/static/js/main.03536695.js.map"
   },
   "entrypoints": [
-    "static/css/main.984eaaf0.css",
+    "static/css/main.0699178c.css",
     "static/js/main.03536695.js"
   ]
 }
