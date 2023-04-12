@@ -74,6 +74,7 @@ body {
 
   .profile-card {
     background: rgb(254, 254, 254);
+    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 19.86%);
   }
 
   .highlights {
@@ -98,7 +99,7 @@ body {
     }
 
     .unavailable-img {
-      filter: brightness(1) grayscale(0.7) brightness(150%)
+      filter: brightness(1) grayscale(0.4) brightness(160%)
     }
   }
 
@@ -116,6 +117,7 @@ body {
 
   .form-control {
     background: rgb(254, 254, 254);
+    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 19.86%);
 
     .form-control-input {
       background: rgb(254, 254, 254);
