@@ -43,14 +43,16 @@ function App() {
   console.log('Dark mode =>', isDarkMode);
 
   return (
-    <div className="container">
-      <Header isDarkMode={isDarkMode} setDarkMode={handleToggle} />
-      <Search 
-        updateUsername={setUsername} 
-        searchInput={searchInput}
-        hasError={hasError} />
-      <ProfileCard user={userData} />
-    </div>
+    <main className={isDarkMode ? 'dark' : 'light'}>
+      <div className="container">
+        <Header isDarkMode={isDarkMode} setDarkMode={handleToggle} />
+        <Search 
+          updateUsername={setUsername} 
+          searchInput={searchInput}
+          hasError={hasError} />
+        <ProfileCard user={userData} /> 
+      </div>
+    </main>
   );
 }
 

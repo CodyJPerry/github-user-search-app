@@ -10,8 +10,8 @@ html, body {
 }
 
 body {
-  background: rgb(20, 29, 47);
-  color: #FFFFFF;
+  // background: rgb(20, 29, 47);
+  // color: #FFFFFF;
   font-family: 'Space Mono', monospace;
   font-size: 15px;
   line-height: 25px;
@@ -54,6 +54,68 @@ body {
       filter: grayscale(25%);
     }
 }
+
+.dark {
+  background: rgb(20, 29, 47);
+  color: #FFFFFF;
+  
+  .profile-card {
+    background: rgb(30, 42, 71);
+  }
+
+  .highlights {
+    background: rgb(20, 29, 47);
+  }
+}
+
+.light {
+  background: rgb(246, 248, 255);
+  color: rgb(43, 52, 66);
+
+  .profile-card {
+    background: rgb(254, 254, 254);
+  }
+
+  .highlights {
+    background: rgb(246, 248, 255);
+
+    .highlight p {
+      color: rgb(75, 106, 155);
+    }
+  }
+
+  .location-social-info {
+    p, a {
+      color: rgb(75, 106, 155)
+    }
+
+    img {
+      filter: brightness(1);
+    }
+
+    .unavailable {
+      color: rgba(75, 106, 155, .5)
+    }
+
+    .unavailable-img {
+      filter: brightness(1) grayscale(0.7) brightness(150%)
+    }
+  }
+
+  .unavailable {
+    color: rgba(75, 106, 155, .5)
+  }
+
+  .unavailable-img {
+    filter: grayscale(10%);
+  }
+
+  .created-at {
+    color: rgb(105, 124, 154);
+  }
+
+}
+
 
 @media (prefers-color-scheme: light) {
   // Light theme styles go here

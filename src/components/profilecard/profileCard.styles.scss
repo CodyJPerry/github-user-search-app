@@ -29,7 +29,7 @@
     .highlights {
         display: flex;
         justify-content: space-between;
-        background: rgb(20, 29, 47);
+        // background: rgb(20, 29, 47);
         border-radius: 10px;
         padding: 1.2em 1em;
         margin-bottom: 1.9em;
@@ -44,7 +44,7 @@
         }
 
         span {
-            font-size: 1rem;
+            font-size: 1.2rem;
             font-weight: 700;
         }
     }
@@ -172,6 +172,10 @@
             justify-content: space-between;
             width: 100%;
             align-items: baseline;
+
+            a {
+                margin-top: 0.3em;
+            }
         }
 
         .avatar-wrapper {
