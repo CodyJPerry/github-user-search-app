@@ -58,27 +58,33 @@ body {
 .dark {
   background: rgb(20, 29, 47);
   color: #FFFFFF;
+  transition: background 0.8s;
   
   .profile-card {
     background: rgb(30, 42, 71);
+    transition: background 0.8s;
   }
 
   .highlights {
     background: rgb(20, 29, 47);
+    transition: background 0.8s;
   }
 }
 
 .light {
   background: rgb(246, 248, 255);
   color: rgb(43, 52, 66);
+  transition: background 0.8s;
 
   .profile-card {
     background: rgb(254, 254, 254);
     box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 19.86%);
+    transition: background 0.8s;
   }
 
   .highlights {
     background: rgb(246, 248, 255);
+    transition: background 0.8s;
 
     .highlight p {
       color: rgb(75, 106, 155);
@@ -118,11 +124,13 @@ body {
   .form-control {
     background: rgb(254, 254, 254);
     box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 19.86%);
+    transition: background 0.8s;
 
     .form-control-input {
       background: rgb(254, 254, 254);
       color: rgb(75, 106, 155);
       background: url('../src/assets/icon-search.svg') no-repeat 24px/24px;
+      transition: background 0.8s;
     }
 
     .form-control-input::placeholder {
