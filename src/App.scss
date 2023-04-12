@@ -114,6 +114,19 @@ body {
     color: rgb(105, 124, 154);
   }
 
+  .form-control {
+    background: rgb(254, 254, 254);
+
+    .form-control-input {
+      background: rgb(254, 254, 254);
+      color: rgb(75, 106, 155);
+      background: url('../src/assets/icon-search.svg') no-repeat 24px/24px;
+    }
+
+    .form-control-input::placeholder {
+      color: rgb(75, 106, 155);
+    }
+  }
 }
 
 
