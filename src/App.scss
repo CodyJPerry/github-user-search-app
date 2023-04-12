@@ -137,6 +137,21 @@ body {
       color: rgb(75, 106, 155);
     }
   }
+
+  .toggle-wrapper div {
+    span {
+      color: rgb(105, 124, 154);
+    }
+
+    span:hover,
+    span:focus {
+      color: rgb(34, 39, 49);
+    }
+
+    img:hover {
+    //  filter: ;
+    }
+  }
 }
 
 
