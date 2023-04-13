@@ -1,3 +1,4 @@
+import React from "react";
 import "./search.styles.scss";
 
 const Search = ({ searchInput, updateUsername, hasError }) => {

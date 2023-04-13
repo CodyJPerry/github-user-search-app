@@ -1,3 +1,4 @@
+import React from "react";
 import "./profileCard.styles.scss";
 import LocationIcon from "../../assets/icon-location.svg";
 import WebsiteIcon from "../../assets/icon-website.svg";

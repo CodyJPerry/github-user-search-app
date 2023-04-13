@@ -1,3 +1,4 @@
+import React from "react";
 import Toggle from "../toggle/Toggle";
 import "./header.styles.scss";
 
