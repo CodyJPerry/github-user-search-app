@@ -6,6 +6,7 @@ const Search = ({ searchInput, updateUsername, hasError }) => {
   function onSubmit(e) {
     e.preventDefault();
     updateUsername(searchInput.current.value.toLowerCase());
+    searchInput.current.value = "";
   }
 
   return (
