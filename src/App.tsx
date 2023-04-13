@@ -2,6 +2,7 @@ import React from "react";
 import Header from "./components/header/Header.component";
 import Search from "./components/search/Search.component";
 import ProfileCard from "./components/profilecard/ProfileCard.component";
+import { UserData } from "./interfaces";
 
 // Style imports
 import './styles/base.scss';
@@ -10,13 +11,27 @@ import './styles/dark-theme.scss';
 import './styles/prefers-color-scheme.scss';
 
 function App(): JSX.Element {
-  const [userData, setUserData] = React.useState<string>("");
+  const [userData, setUserData] = React.useState<UserData>({
+      login: "",
+      name: "",
+      bio: "",
+      created_at: new Date(),
+      public_repos: 0,
+      followers: 0,
+      location: "",
+      blog: "",
+      company: "",
+      twitter_username: "",
+      following: 0, 
+      avatar_url: "",
+      url: ""
+  });
   const [isDarkMode, setIsDarkMode] = React.useState<boolean>(true);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isLoading, setIsLoading] = React.useState<boolean>(false);
   const [hasError, setHasError] = React.useState<boolean>(false);
   const [username, setUsername] = React.useState<string>("octocat");
-  const searchInput = React.useRef<HTMLInputElement>();
+  const searchInput = React.useRef<HTMLInputElement>(null);
 
   const handleToggle = () => {
     setIsDarkMode(darkMode => !darkMode);

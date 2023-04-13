@@ -11,7 +11,7 @@ export interface ToggleProps {
 }
 
 export interface SearchProps {
-  searchInput: HTMLFormElement,
+  searchInput: React.RefObject<HTMLInputElement>,
   updateUsername: Dispatch<SetStateAction<string>>,
   hasError: boolean
 }
@@ -32,4 +32,19 @@ export interface ProfileCardProps {
     avatar_url: string,
     url: string
   }
+}
+export interface UserData {
+      login: string,
+      name: string,
+      bio: string,
+      created_at: Date,
+      public_repos: number,
+      followers: number,
+      location: string,
+      blog: string,
+      company: string,
+      twitter_username: string,
+      following: number, 
+      avatar_url: string,
+      url: string
 }

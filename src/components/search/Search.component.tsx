@@ -5,11 +5,15 @@ import { SearchProps } from "../../interfaces";
 const Search: React.FC<SearchProps> = ({ searchInput, updateUsername, hasError }) => {
   // We want an uncontrolled component to let the DOM handle our state instead of the component
 
-  function onSubmit(e: Event) {
+  function onSubmit(e: React.ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
-    updateUsername(searchInput.current.value.toLowerCase());
-    searchInput.current.value = "";
+    if (searchInput.current) {
+      updateUsername(searchInput.current.value.toLowerCase());
+      searchInput.current.value = "";
+    }
   }
+
+
 
   return (
     <div className="form-wrapper">
