@@ -1,0 +1,79 @@
+.light {
+  background: rgb(246, 248, 255);
+  color: rgb(43, 52, 66);
+  transition: background 0.8s;
+
+  .profile-card {
+    background: rgb(254, 254, 254);
+    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 19.86%);
+    transition: background 0.8s;
+  }
+
+  .highlights {
+    background: rgb(246, 248, 255);
+    transition: background 0.8s;
+
+    .highlight p {
+      color: rgb(75, 106, 155);
+    }
+  }
+
+  .location-social-info {
+    p, a {
+      color: rgb(75, 106, 155)
+    }
+
+    img {
+      filter: brightness(1);
+    }
+
+    .unavailable {
+      color: rgba(75, 106, 155, .5)
+    }
+
+    .unavailable-img {
+      filter: brightness(1) grayscale(0.4) brightness(160%)
+    }
+  }
+
+  .unavailable {
+    color: rgba(75, 106, 155, .5)
+  }
+
+  .unavailable-img {
+    filter: grayscale(10%);
+  }
+
+  .created-at {
+    color: rgb(105, 124, 154);
+  }
+
+  .form-control {
+    background: rgb(254, 254, 254);
+    box-shadow: 0 16px 30px -10px rgba(70, 96, 187, 19.86%);
+    transition: background 0.8s;
+
+    .form-control-input {
+      background: rgb(254, 254, 254);
+      color: rgb(75, 106, 155);
+      background: url('../assets/icon-search.svg') no-repeat 24px/24px;
+      transition: background 0.8s;
+    }
+
+    .form-control-input::placeholder {
+      color: rgb(75, 106, 155);
+    }
+  }
+
+  .toggle-wrapper div {
+    span {
+      color: rgb(105, 124, 154);
+    }
+  }
+
+  .toggle-wrapper div:hover,
+  .toggle-wrapper div:focus {
+    color: rgb(34, 39, 49);
+    filter: brightness(0.5);
+  }
+}

@@ -1,5 +1,4 @@
 .profile-card {
-    background: rgb(30, 42, 71);
     border-radius: 15px;
     padding: 2em 1.5em;
     position: relative;
@@ -29,7 +28,6 @@
     .highlights {
         display: flex;
         justify-content: space-between;
-        // background: rgb(20, 29, 47);
         border-radius: 10px;
         padding: 1.2em 1em;
         margin-bottom: 1.9em;
@@ -162,7 +160,7 @@
 
 @media screen and (min-width: 769px) {
     .profile-card {
-        background: rgb(30, 42, 71);
+     //   background: rgb(30, 42, 71);
         border-radius: 15px;
         padding: 2.5em 3em 2em 3em;
         display: flex;

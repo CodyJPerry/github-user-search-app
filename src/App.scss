@@ -70,16 +70,9 @@ body {
     transition: background 0.8s;
   }
 
-  // .toggle-wrapper div {
-  //   span {
-  //     color: rgb(105, 124, 154);
-  //   }
-  // }
-
   .toggle-wrapper div:hover,
   .toggle-wrapper div:focus {
-   // color: rgb(142, 166, 225);
-    filter: invert(53%) sepia(14%) saturate(1202%) hue-rotate(188deg) brightness(90%) contrast(80%);
+    filter: invert(53%) sepia(14%) saturate(1202%) hue-rotate(188deg) brightness(150%) contrast(80%);
   }
 }
 

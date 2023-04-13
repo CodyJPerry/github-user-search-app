@@ -3,7 +3,11 @@ import Header from "./components/header/Header.component";
 import Search from "./components/search/Search.component";
 import ProfileCard from "./components/profilecard/ProfileCard.component";
 
-import "./App.scss";
+// Style imports
+import './styles/base.scss';
+import './styles/light-theme.scss';
+import './styles/dark-theme.scss';
+import './styles/prefers-color-scheme.scss';
 
 function App() {
   const [userData, setUserData] = React.useState("");

@@ -1,0 +1,20 @@
+.dark {
+  background: rgb(20, 29, 47);
+  color: #FFFFFF;
+  transition: background 0.8s;
+  
+  .profile-card {
+    background: rgb(30, 42, 71);
+    transition: background 0.8s;
+  }
+
+  .highlights {
+    background: rgb(20, 29, 47);
+    transition: background 0.8s;
+  }
+
+  .toggle-wrapper div:hover,
+  .toggle-wrapper div:focus {
+    filter: invert(53%) sepia(14%) saturate(1502%) hue-rotate(188deg) brightness(150%) contrast(80%);
+  }
+}
