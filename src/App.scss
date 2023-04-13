@@ -69,6 +69,18 @@ body {
     background: rgb(20, 29, 47);
     transition: background 0.8s;
   }
+
+  // .toggle-wrapper div {
+  //   span {
+  //     color: rgb(105, 124, 154);
+  //   }
+  // }
+
+  .toggle-wrapper div:hover,
+  .toggle-wrapper div:focus {
+   // color: rgb(142, 166, 225);
+    filter: invert(53%) sepia(14%) saturate(1202%) hue-rotate(188deg) brightness(90%) contrast(80%);
+  }
 }
 
 .light {
@@ -142,15 +154,12 @@ body {
     span {
       color: rgb(105, 124, 154);
     }
+  }
 
-    span:hover,
-    span:focus {
-      color: rgb(34, 39, 49);
-    }
-
-    img:hover {
-    //  filter: ;
-    }
+  .toggle-wrapper div:hover,
+  .toggle-wrapper div:focus {
+    color: rgb(34, 39, 49);
+    filter: brightness(0.5);
   }
 }
 
