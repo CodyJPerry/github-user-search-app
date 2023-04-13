@@ -9,9 +9,10 @@ import './styles/light-theme.scss';
 import './styles/dark-theme.scss';
 import './styles/prefers-color-scheme.scss';
 
-function App() {
+function App(): React.FC {
   const [userData, setUserData] = React.useState("");
   const [isDarkMode, setIsDarkMode] = React.useState(true);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [isLoading, setIsLoading] = React.useState(false);
   const [hasError, setHasError] = React.useState(false);
   const [username, setUsername] = React.useState("octocat");

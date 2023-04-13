@@ -1,11 +1,13 @@
-import React from "react";
+import React, { SetStateAction } from "react";
 import SunIcon from "../../assets/icon-sun.svg";
 import MoonIcon from "../../assets/icon-moon.svg";
 
+import { ToggleProps } from "../../interfaces";
+
 import "./toggle.styles.scss";
 
-const Toggle = ({ isDarkMode, setDarkMode}) => {
-  const handleColorScheme = () => {
+const Toggle: React.FC<ToggleProps> = ({ isDarkMode, setDarkMode}) => {
+  const handleColorScheme = (): void => {
     // Check what color scheme the users device has set and update state
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setDarkMode(true);

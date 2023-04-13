@@ -4,8 +4,10 @@ import LocationIcon from "../../assets/icon-location.svg";
 import WebsiteIcon from "../../assets/icon-website.svg";
 import TwitterIcon from "../../assets/icon-twitter.svg";
 import CompanyIcon from "../../assets/icon-company.svg";
+import { ProfileCardProps } from "../../interfaces";
 
-const ProfileCard = ({ user }) => {
+
+const ProfileCard: React.FC<ProfileCardProps> = ({ user }) => {
   const {
     login,
     name,
