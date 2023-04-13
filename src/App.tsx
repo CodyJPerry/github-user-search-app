@@ -9,14 +9,14 @@ import './styles/light-theme.scss';
 import './styles/dark-theme.scss';
 import './styles/prefers-color-scheme.scss';
 
-function App(): React.FC {
-  const [userData, setUserData] = React.useState("");
-  const [isDarkMode, setIsDarkMode] = React.useState(true);
+function App(): JSX.Element {
+  const [userData, setUserData] = React.useState<string>("");
+  const [isDarkMode, setIsDarkMode] = React.useState<boolean>(true);
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const [isLoading, setIsLoading] = React.useState(false);
-  const [hasError, setHasError] = React.useState(false);
-  const [username, setUsername] = React.useState("octocat");
-  const searchInput = React.useRef();
+  const [isLoading, setIsLoading] = React.useState<boolean>(false);
+  const [hasError, setHasError] = React.useState<boolean>(false);
+  const [username, setUsername] = React.useState<string>("octocat");
+  const searchInput = React.useRef<HTMLInputElement>();
 
   const handleToggle = () => {
     setIsDarkMode(darkMode => !darkMode);
@@ -44,8 +44,6 @@ function App(): React.FC {
     };
     fetchInfo();
   }, [username]);
-
-  console.log('Dark mode =>', isDarkMode);
 
   return (
     <main className={isDarkMode ? 'dark' : 'light'}>

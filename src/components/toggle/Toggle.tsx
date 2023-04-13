@@ -1,9 +1,7 @@
-import React, { SetStateAction } from "react";
+import React from "react";
 import SunIcon from "../../assets/icon-sun.svg";
 import MoonIcon from "../../assets/icon-moon.svg";
-
 import { ToggleProps } from "../../interfaces";
-
 import "./toggle.styles.scss";
 
 const Toggle: React.FC<ToggleProps> = ({ isDarkMode, setDarkMode}) => {
