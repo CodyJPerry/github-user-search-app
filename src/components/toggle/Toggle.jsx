@@ -6,6 +6,7 @@ import "./toggle.styles.scss";
 
 const Toggle = ({ isDarkMode, setDarkMode}) => {
   const handleColorScheme = () => {
+    // Check what color scheme the users device has set and update state
     if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       setDarkMode(true);
     } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
