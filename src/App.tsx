@@ -11,7 +11,7 @@ import './styles/dark-theme.scss';
 
 function App(): JSX.Element {
   const [userData, setUserData] = React.useState<UserData>({
-      login: "",
+      login: "Octocat",
       name: "",
       bio: "",
       created_at: new Date(),

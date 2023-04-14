@@ -2,7 +2,7 @@ import { Dispatch, SetStateAction} from 'react';
 
 export interface HeaderProps {
   isDarkMode: boolean
-  toggleMode: Dispatch<SetStateAction<boolean>>
+  toggleMode: React.MouseEventHandler<HTMLDivElement>
 }
 
 export interface ToggleProps {

@@ -1,0 +1,616 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header Component 1`] = `
+<DocumentFragment>
+  <header
+    class="header-wrapper"
+  >
+    <h1
+      class="title"
+    >
+      devfinder
+    </h1>
+    <div
+      class="toggle-wrapper"
+    >
+      <div
+        class="toggle"
+      >
+        <span>
+          Dark
+        </span>
+        <img
+          alt="Icon of a moon"
+          src="icon-moon.svg"
+        />
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`Header component snapshot 1`] = `
+<DocumentFragment>
+  <header
+    class="header-wrapper"
+  >
+    <h1
+      class="title"
+    >
+      devfinder
+    </h1>
+    <div
+      class="toggle-wrapper"
+    >
+      <div
+        class="toggle"
+      >
+        <span>
+          Dark
+        </span>
+        <img
+          alt="Icon of a moon"
+          src="icon-moon.svg"
+        />
+      </div>
+    </div>
+  </header>
+</DocumentFragment>
+`;
+
+exports[`Profile Component 1`] = `
+<DocumentFragment>
+  <div
+    class="profile-card"
+  >
+    <div
+      class="avatar-wrapper"
+    />
+    <div
+      class="content"
+    >
+      <div
+        class="header"
+      >
+        <div
+          class="details"
+        >
+          <div
+            class="title-wrapper"
+          >
+            <h2>
+              Not found
+            </h2>
+            <a
+              href=""
+            />
+          </div>
+          <div
+            class="created-at"
+          >
+            <p />
+          </div>
+        </div>
+      </div>
+      <div
+        class="bio"
+      >
+        <p
+          class="unavailable"
+        >
+           This profile has no bio.
+        </p>
+      </div>
+      <div
+        class="body"
+      >
+        <div
+          class="highlights"
+        >
+          <div
+            class="highlight"
+          >
+            <p>
+              Repos
+            </p>
+            <span>
+              0
+            </span>
+          </div>
+          <div
+            class="highlight"
+          >
+            <p>
+              Followers
+            </p>
+            <span>
+              0
+            </span>
+          </div>
+          <div
+            class="highlight"
+          >
+            <p>
+              Following
+            </p>
+            <span>
+              0
+            </span>
+          </div>
+        </div>
+        <div
+          class="location-social-info"
+        >
+          <div
+            class="location"
+          >
+            <img
+              alt="Map marker icon to signal location"
+              class="unavailable-img"
+              src="icon-location.svg"
+            />
+            <p
+              class="unavailable"
+            >
+              Not Available
+            </p>
+          </div>
+          <div
+            class="profile-link"
+          >
+            <img
+              alt="Map marker icon to signal location"
+              class="unavailable-img"
+              src="icon-website.svg"
+            />
+            <p
+              class="unavailable"
+            >
+              Not Available
+            </p>
+          </div>
+          <div
+            class="twitter-social"
+          >
+            <img
+              alt="Map marker icon to signal location"
+              class="unavailable-img"
+              src="icon-twitter.svg"
+            />
+            <p
+              class="unavailable"
+            >
+              Not Available
+            </p>
+          </div>
+          <div
+            class="company"
+          >
+            <img
+              alt="Map marker icon to signal location"
+              class="unavailable-img"
+              src="icon-company.svg"
+            />
+            <p
+              class="unavailable"
+            >
+              Not Available
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Profile component snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="profile-card"
+  >
+    <div
+      class="avatar-wrapper"
+    />
+    <div
+      class="content"
+    >
+      <div
+        class="header"
+      >
+        <div
+          class="details"
+        >
+          <div
+            class="title-wrapper"
+          >
+            <h2>
+              Not found
+            </h2>
+            <a
+              href=""
+            />
+          </div>
+          <div
+            class="created-at"
+          >
+            <p />
+          </div>
+        </div>
+      </div>
+      <div
+        class="bio"
+      >
+        <p
+          class="unavailable"
+        >
+           This profile has no bio.
+        </p>
+      </div>
+      <div
+        class="body"
+      >
+        <div
+          class="highlights"
+        >
+          <div
+            class="highlight"
+          >
+            <p>
+              Repos
+            </p>
+            <span>
+              0
+            </span>
+          </div>
+          <div
+            class="highlight"
+          >
+            <p>
+              Followers
+            </p>
+            <span>
+              0
+            </span>
+          </div>
+          <div
+            class="highlight"
+          >
+            <p>
+              Following
+            </p>
+            <span>
+              0
+            </span>
+          </div>
+        </div>
+        <div
+          class="location-social-info"
+        >
+          <div
+            class="location"
+          >
+            <img
+              alt="Map marker icon to signal location"
+              class="unavailable-img"
+              src="icon-location.svg"
+            />
+            <p
+              class="unavailable"
+            >
+              Not Available
+            </p>
+          </div>
+          <div
+            class="profile-link"
+          >
+            <img
+              alt="Map marker icon to signal location"
+              class="unavailable-img"
+              src="icon-website.svg"
+            />
+            <p
+              class="unavailable"
+            >
+              Not Available
+            </p>
+          </div>
+          <div
+            class="twitter-social"
+          >
+            <img
+              alt="Map marker icon to signal location"
+              class="unavailable-img"
+              src="icon-twitter.svg"
+            />
+            <p
+              class="unavailable"
+            >
+              Not Available
+            </p>
+          </div>
+          <div
+            class="company"
+          >
+            <img
+              alt="Map marker icon to signal location"
+              class="unavailable-img"
+              src="icon-company.svg"
+            />
+            <p
+              class="unavailable"
+            >
+              Not Available
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Search Component 1`] = `
+<DocumentFragment>
+  <div
+    class="form-wrapper"
+  >
+    <form
+      autocomplete="off"
+      class="form-control"
+    >
+      <input
+        class="form-control-input"
+        name="searchTerm"
+        placeholder="Search Github username..."
+        type="text"
+      />
+      <input
+        class="form-control-action"
+        type="submit"
+        value="Search"
+      />
+    </form>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toggle Component 1`] = `
+<DocumentFragment>
+  <div
+    class="toggle-wrapper"
+  >
+    <div
+      class="toggle"
+    >
+      <span>
+        Dark
+      </span>
+      <img
+        alt="Icon of a moon"
+        src="icon-moon.svg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Toggle component snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="toggle-wrapper"
+  >
+    <div
+      class="toggle"
+    >
+      <span>
+        Dark
+      </span>
+      <img
+        alt="Icon of a moon"
+        src="icon-moon.svg"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`should take a snapshot 1`] = `
+<DocumentFragment>
+  <main
+    class="dark"
+  >
+    <div
+      class="container"
+    >
+      <header
+        class="header-wrapper"
+      >
+        <h1
+          class="title"
+        >
+          devfinder
+        </h1>
+        <div
+          class="toggle-wrapper"
+        >
+          <div
+            class="toggle"
+          >
+            <span>
+              Light
+            </span>
+            <img
+              alt="Icon of a sun"
+              src="icon-sun.svg"
+            />
+          </div>
+        </div>
+      </header>
+      <div
+        class="form-wrapper"
+      >
+        <form
+          autocomplete="off"
+          class="form-control"
+        >
+          <input
+            class="form-control-input"
+            name="searchTerm"
+            placeholder="Search Github username..."
+            type="text"
+          />
+          <input
+            class="form-control-action"
+            type="submit"
+            value="Search"
+          />
+        </form>
+      </div>
+      <div
+        class="profile-card"
+      >
+        <div
+          class="avatar-wrapper"
+        />
+        <div
+          class="content"
+        >
+          <div
+            class="header"
+          >
+            <div
+              class="details"
+            >
+              <div
+                class="title-wrapper"
+              >
+                <h2>
+                  Not found
+                </h2>
+                <a
+                  href=""
+                />
+              </div>
+              <div
+                class="created-at"
+              >
+                <p>
+                  Joined 14 Apr 2023
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bio"
+          >
+            <p
+              class="unavailable"
+            >
+               This profile has no bio.
+            </p>
+          </div>
+          <div
+            class="body"
+          >
+            <div
+              class="highlights"
+            >
+              <div
+                class="highlight"
+              >
+                <p>
+                  Repos
+                </p>
+                <span>
+                  0
+                </span>
+              </div>
+              <div
+                class="highlight"
+              >
+                <p>
+                  Followers
+                </p>
+                <span>
+                  0
+                </span>
+              </div>
+              <div
+                class="highlight"
+              >
+                <p>
+                  Following
+                </p>
+                <span>
+                  0
+                </span>
+              </div>
+            </div>
+            <div
+              class="location-social-info"
+            >
+              <div
+                class="location"
+              >
+                <img
+                  alt="Map marker icon to signal location"
+                  class="unavailable-img"
+                  src="icon-location.svg"
+                />
+                <p
+                  class="unavailable"
+                >
+                  Not Available
+                </p>
+              </div>
+              <div
+                class="profile-link"
+              >
+                <img
+                  alt="Map marker icon to signal location"
+                  class="unavailable-img"
+                  src="icon-website.svg"
+                />
+                <p
+                  class="unavailable"
+                >
+                  Not Available
+                </p>
+              </div>
+              <div
+                class="twitter-social"
+              >
+                <img
+                  alt="Map marker icon to signal location"
+                  class="unavailable-img"
+                  src="icon-twitter.svg"
+                />
+                <p
+                  class="unavailable"
+                >
+                  Not Available
+                </p>
+              </div>
+              <div
+                class="company"
+              >
+                <img
+                  alt="Map marker icon to signal location"
+                  class="unavailable-img"
+                  src="icon-company.svg"
+                />
+                <p
+                  class="unavailable"
+                >
+                  Not Available
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+</DocumentFragment>
+`;

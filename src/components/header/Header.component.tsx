@@ -1,5 +1,5 @@
 import React from "react";
-import Toggle from "../toggle/Toggle";
+import Toggle from "../toggle/Toggle.component";
 import "./header.styles.scss";
 import { HeaderProps } from "../../interfaces";
 
