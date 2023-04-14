@@ -8,7 +8,6 @@ import { UserData } from "./interfaces";
 import './styles/base.scss';
 import './styles/light-theme.scss';
 import './styles/dark-theme.scss';
-import './styles/prefers-color-scheme.scss';
 
 function App(): JSX.Element {
   const [userData, setUserData] = React.useState<UserData>({
@@ -63,7 +62,10 @@ function App(): JSX.Element {
   return (
     <main className={isDarkMode ? 'dark' : 'light'}>
       <div className="container">
-        <Header isDarkMode={isDarkMode} setDarkMode={handleToggle} />
+        <Header 
+          isDarkMode={isDarkMode} 
+          toggleMode={handleToggle} 
+        />
         <Search 
           updateUsername={setUsername} 
           searchInput={searchInput}

@@ -6,7 +6,7 @@ import TwitterIcon from "../../assets/icon-twitter.svg";
 import CompanyIcon from "../../assets/icon-company.svg";
 import { ProfileCardProps } from "../../interfaces";
 
-const ProfileCard: React.FC<ProfileCardProps> = ({ user }) => {
+const ProfileCard: React.FC<ProfileCardProps> = ({ user }): JSX.Element => {
   const {
     login,
     name,

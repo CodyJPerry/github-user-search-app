@@ -2,7 +2,7 @@ import React from "react";
 import "./search.styles.scss";
 import { SearchProps } from "../../interfaces";
 
-const Search: React.FC<SearchProps> = ({ searchInput, updateUsername, hasError }) => {
+const Search: React.FC<SearchProps> = ({ searchInput, updateUsername, hasError }): JSX.Element => {
   // We want an uncontrolled component to let the DOM handle our state instead of the component
 
   function onSubmit(e: React.ChangeEvent<HTMLFormElement>) {

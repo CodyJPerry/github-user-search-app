@@ -2,12 +2,12 @@ import { Dispatch, SetStateAction} from 'react';
 
 export interface HeaderProps {
   isDarkMode: boolean
-  setDarkMode: Dispatch<SetStateAction<boolean>>
+  toggleMode: Dispatch<SetStateAction<boolean>>
 }
 
 export interface ToggleProps {
   isDarkMode: boolean,
-  setDarkMode: Dispatch<SetStateAction<boolean>>
+  toggleMode: React.MouseEventHandler<HTMLDivElement>
 }
 
 export interface SearchProps {

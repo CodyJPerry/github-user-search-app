@@ -4,24 +4,11 @@ import MoonIcon from "../../assets/icon-moon.svg";
 import { ToggleProps } from "../../interfaces";
 import "./toggle.styles.scss";
 
-const Toggle: React.FC<ToggleProps> = ({ isDarkMode, setDarkMode}) => {
-  const handleColorScheme = (): void => {
-    // Check what color scheme the users device has set and update state
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      setDarkMode(true);
-    } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
-      setDarkMode(false);
-    }
-
-    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', event => {
-      event.matches ? setDarkMode(true) : setDarkMode(false);
-    });
-  }
-
+const Toggle: React.FC<ToggleProps> = ({ isDarkMode, toggleMode}): JSX.Element => {
   return (
       <div className="toggle-wrapper">
       <div 
-        onClick={handleColorScheme} 
+        onClick={toggleMode}
         className="toggle"
       >
       {isDarkMode ? (
